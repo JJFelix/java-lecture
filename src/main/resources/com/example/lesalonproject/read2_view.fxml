@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lesalonproject.Read2Controller" spacing="10" alignment="CENTER">
+    <HBox spacing="10">
+        <Label text="Manufacturer Filter:" />
+        <TextField fx:id="manufacturerFilter" />
+        <Label text="Processor Filter:" />
+        <ComboBox fx:id="processorFilter" />
+        <CheckBox fx:id="opsystemFilterCheck" text="Include OS" />
+        <RadioButton fx:id="harddiskFilter" text="Include Harddisk" />
+        <Button text="Apply Filter" onAction="#applyFilter"/>
+    </HBox>
+    <TableView fx:id="table">
+        <columns>
+            <TableColumn text="ID" fx:id="idColumn" />
+            <TableColumn text="Manufacturer" fx:id="manufacturerColumn" />
+            <TableColumn text="Type" fx:id="typeColumn" />
+            <TableColumn text="Display" fx:id="displayColumn" />
+            <TableColumn text="Memory" fx:id="memoryColumn" />
+            <TableColumn text="Hard Disk" fx:id="harddiskColumn" />
+            <TableColumn text="Video Controller" fx:id="videocontrollerColumn" />
+            <TableColumn text="Price" fx:id="priceColumn" />
+            <TableColumn text="Processor Id" fx:id="processoridColumn" />
+            <TableColumn text="Op System Id" fx:id="opsystemidColumn" />
+            <TableColumn text="Pieces" fx:id="piecesColumn" />
+        </columns>
+    </TableView>
+</VBox>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lesalonproject.MainController">
+<top>
+    <MenuBar>
+        <Menu text="Notebook Menu">
+            <MenuItem text="Notebook Read" onAction="#handleRead" />
+            <MenuItem text="Notebook Read2" onAction="#handleRead2" />
+            <MenuItem text="Notebook Create" onAction="#handleWrite" />
+            <MenuItem text="Notebook Update" onAction="#handleChange" />
+            <MenuItem text="Notebook Delete" onAction="#handleDelete" />
+            
+        </Menu>
+        
+        <Menu text="Processors Menu">
+            <MenuItem text="Processor Read" onAction="#handleProcessorRead" />
+            <MenuItem text="Processor Create" onAction="#handleProcessorCreate" />
+            <MenuItem text="Processor Update" onAction="#handleProcessorUpdate" />
+            <MenuItem text="Processs Delete" onAction="#handleProcessorDelete" />
+        </Menu>
+        <Menu text="Operating System Menu">
+            <MenuItem text="Os Read" onAction="#handleOsRead" />
+            <MenuItem text="Os Create" onAction="#handleOsCreate" />
+            <MenuItem text="Os Update" onAction="#handleOsUpdate" />
+            <MenuItem text="Os Delete" onAction="#handleOsDelete" />
+        </Menu>
+        <Menu text="Relationship Manager">
+            <MenuItem text="Show all data" onAction="#handleRelationships" />
+            
+        </Menu>
+        <Menu text="Parallel Programming">
+            <MenuItem text="Click to see example" onAction="#handleParallels" />
+            
+        </Menu>
+    </MenuBar>
+</top>
+    <center>
+        <StackPane fx:id="contentPane" />
+    </center>
+</BorderPane>

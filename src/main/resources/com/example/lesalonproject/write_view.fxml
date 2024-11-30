@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.sun.javafx.scene.control.IntegerField?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      xmlns:formsfx="impl.org.controlsfx.formsfx.view.controls"
+      fx:controller="com.example.lesalonproject.WriteController"
+      spacing="10" alignment="CENTER">
+    <TextField fx:id="manufacturerField" promptText="Manufacturer" />
+    <TextField fx:id="typeField" promptText="Type" />
+    <TextField fx:id="displayField" promptText="Display Size (in inches)" />
+    <TextField fx:id="memoryField" promptText="Memory (in GB)" />
+    <TextField fx:id="harddiskField" promptText="Hard Disk Capacity (in GB)" />
+    <TextField fx:id="videocontrollerField" promptText="Video Controller" />
+    <TextField fx:id="priceField" promptText="Price ($)" />
+    <TextField fx:id="processoridField" promptText="Processor Id" />
+    <TextField fx:id="opsystemidField" promptText="OS ID" />
+    <TextField fx:id="piecesField" promptText="Number of Pieces" />
+    <Button text="Add Notebook" onAction="#addNotebook" />
+</VBox>

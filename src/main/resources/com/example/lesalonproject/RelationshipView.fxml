@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Scene?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.lesalonproject.RelationshipController">
+    
+    <TabPane>
+        <Tab text="Notebooks">
+            <TableView fx:id="notebookTable">
+                <columns>
+                    <TableColumn fx:id="notebookIdColumn" text="ID"/>
+                    <TableColumn fx:id="notebookManufacturerColumn" text="Manufacturer"/>
+                    <TableColumn fx:id="notebookTypeColumn" text="Type"/>
+                    <TableColumn fx:id="notebookDisplayColumn" text="Display"/>
+                    <TableColumn fx:id="notebookMemoryColumn" text="Memory"/>
+                    <TableColumn fx:id="notebookHarddiskColumn" text="Harddisk"/>
+                    <TableColumn fx:id="notebookVideocontrollerColumn" text="Videocontroller"/>
+                    <TableColumn fx:id="notebookPriceColumn" text="Price"/>
+                    <TableColumn fx:id="notebookProcessoridColumn" text="Processor ID"/>
+                    <TableColumn fx:id="notebookOpsystemidColumn" text="OS ID"/>
+                    <TableColumn fx:id="notebookPiecesColumn" text="Pieces"/>
+                </columns>
+            </TableView>
+        </Tab>
+        
+        <Tab text="Processors">
+            <TableView fx:id="processorTable">
+                <columns>
+                    <TableColumn fx:id="processorIdColumn" text="ID"/>
+                    <TableColumn fx:id="processorManufacturerColumn" text="Manufacturer"/>
+                    <TableColumn fx:id="processorTypeColumn" text="Type"/>
+                </columns>
+            </TableView>
+        </Tab>
+        
+        <Tab text="Operating Systems">
+            <TableView fx:id="opsystemTable">
+                <columns>
+                    <TableColumn fx:id="osIdColumn" text="ID"/>
+                    <TableColumn fx:id="osNameColumn" text="OS Name"/>
+                </columns>
+            </TableView>
+        </Tab>
+        
+    </TabPane>
+
+</VBox>

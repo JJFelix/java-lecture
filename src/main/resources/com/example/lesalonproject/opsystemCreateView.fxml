@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.sun.javafx.scene.control.IntegerField?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      xmlns:formsfx="impl.org.controlsfx.formsfx.view.controls"
+      fx:controller="com.example.lesalonproject.OpsystemCreate"
+      spacing="10" alignment="CENTER">
+    
+    <TextField fx:id="osnameField" promptText="Operating System Name" />
+    <Button text="Add Operating System" onAction="#addOpsystem" />
+    
+</VBox>

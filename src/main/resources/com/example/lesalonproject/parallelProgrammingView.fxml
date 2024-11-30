@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.lesalonproject.ParallelProgrammingController"
+      spacing="20" alignment="CENTER">
+    <!-- Label for updates every 1 second -->
+    <Label fx:id="label1" text="Label 1: Waiting for updates..." />
+    <!-- Label for updates every 2 seconds -->
+    <Label fx:id="label2" text="Label 2: Waiting for updates..." />
+    <!-- Button to start the parallel task -->
+    <Button text="Start Parallel Updates" onAction="#startParallelUpdates" />
+</VBox>
