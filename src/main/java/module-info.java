@@ -8,8 +8,13 @@ module com.example.lesalonproject {
     requires java.sql;
 
 //    requires org.xerial.sqlitejdbc;
-//    requires org.slf4j;
+    requires org.slf4j;
 
+    requires jakarta.xml.bind;
+//    requires jakarta.jws;
+    requires jakarta.xml.ws;
+    requires v20;
+    opens com.example.lesalonproject.service to jakarta.xml.bind, jakarta.xml.ws;
 
     opens com.example.lesalonproject to javafx.fxml;
     exports com.example.lesalonproject;
